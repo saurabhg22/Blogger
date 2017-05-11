@@ -42,22 +42,7 @@
     </head>
 
     <body ng-app="userApp" ng-controller="mainCtrl as main" ng-show="!main.loading" ng-cloak>
-        <header id="header">      
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 overflow">
-                    <div class="social-icons pull-right">
-                            <ul class="nav nav-pills">
-                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div> 
-                    </div>
-                </div>
-            </div>
+        <header id="header">    
             <div class="navbar navbar-inverse" role="banner">
                 <div class="container">
                     <div class="navbar-header">
@@ -86,14 +71,6 @@
                             <li ng-show="main.isLoggedIn"><a href="#" ng-click="main.logout();">Logout</a></li>
                                               
                         </ul>
-                    </div>
-                    <div class="search">
-                        <form role="form">
-                            <i class="fa fa-search"></i>
-                            <div class="field-toggle">
-                                <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
