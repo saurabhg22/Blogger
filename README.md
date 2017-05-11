@@ -29,3 +29,9 @@ php artisan migrate
 ```
 
 - You're good to go. Go to <code>localhost:8000</code> to see it inaction.
+
+
+Screenshots
+
+============
+![Alt text](/screenshots/Etale.PNG "Demo")
