@@ -1,0 +1,35 @@
+
+
+<div  class="container" ng-show="!main.ispermit">
+  <div class="alert alert-danger">You don`t have permissions to create a new blog. Please login or register with a Blogger or Admin account.</div>
+</div>
+
+<div class="container" ng-show="main.ispermit">
+  <div class="row">
+   <div class="col-md-8 col-md-offset-2 col-sm-offset-1 col-xm-12 col-sm-10">
+      <div class="page-header">Create a new Blog</div>
+
+      <form ng-submit="newblog.submit()">
+        <div class="form-group">
+          <label for="heading">Heading</label>
+          <input type="text" class="form-control" id="heading" placeholder="Heading" ng-model="newblog.heading">
+        </div>
+        <div class="form-group">
+          <label for="data">Blog Text</label>
+          <textarea rows="8" class="form-control" id="data" placeholder="Type here" ng-model="newblog.data"></textarea> 
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+      <div class="loader" ng-show="newblog.checking"></div>
+      <div ng-show="newblog.successMsg">
+          <div class="alert alert-success">{{newblog.successMsg}}</div>
+      </div>
+
+      <div ng-show="newblog.errorMsg">
+          <div class="alert alert-danger">{{newblog.errorMsg}}</div>
+      </div>
+    </div>
+  </div>
+</div>

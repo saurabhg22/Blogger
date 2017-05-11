@@ -1,0 +1,29 @@
+<div class="loader" ng-show="main.loading"></div>
+<div class="page-header">{{main.name}}
+<span style="text-align: center; font-size: 15px;">{{main.category}}</span>
+</div>
+<h3 style="text-align: center; font-size: 25px;" ng-show="main.ispermit">Your Blogs</h3>
+<div class="container" style="margin-bottom: 100px;" ng-show="main.ispermit">
+    <div class="row">
+         <div class="col-md-8 col-md-offset-2 col-sm-12">
+			<table class="table">
+			  <thead>
+			    <tr>
+			      <th colspan="1">#</th>
+			      <th colspan="3">Blog</th>
+			      <th colspan="1">Last update at</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr ng-repeat="blog in main.myblogs">
+				    
+				      <th colspan="1" scope="row">{{$index + 1}}</th>
+				      <td colspan="3"><a href="/blogdetails/{{blog.id}}" style="color: black;">{{blog.heading}}</a></td>
+				      <td colspan="1">{{blog.updated_at | date : "medium"}}</td>
+
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+	</div>
+</div>

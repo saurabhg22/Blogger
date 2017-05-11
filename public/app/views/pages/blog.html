@@ -1,0 +1,68 @@
+<div class="loader" ng-show="blog.loading"></div>
+<div class="container" style="margin-bottom: 100px;" ng-show="!blog.loading">
+    <div class="row">
+         <div class="col-md-8 col-md-offset-2 col-sm-12">
+            <div class="single-blog two-column">
+                <div class="post-content blog">
+                    <h2 class="post-title bold"><a href="/blogdetails/{{blog.blog.id}}">{{blog.blog.heading | capitalize}}</a></h2>
+                    <p ng-model="blog.blog.data">{{blog.blog.data}}</p>
+                </div>
+                <h5>By: {{blog.blog.user.name}}</h5>
+                <h5>Created at: {{blog.blog.created_at | date : "medium"}}</h5>
+                <h5>Last update at: {{blog.blog.updated_at | date : "medium"}}</h5>
+            </div>
+
+			<button class="btn btn-primary" ng-show="blog.editable" data-toggle="modal" data-target="#editModal">Edit</button>&nbsp;&nbsp;&nbsp;
+			<button class="btn btn-danger" ng-show="blog.editable" ng-click="blog.delete();">Delete</button><br><br>
+      		<div class="loader" ng-show="blog.delchecking"></div>
+		 	  <div ng-show="blog.delsuccessMsg">
+		          <div class="alert alert-success">{{blog.delsuccessMsg}}</div>
+		      </div>
+
+		      <div ng-show="blog.delerrorMsg">
+		          <div class="alert alert-danger">{{blog.delerrorMsg}}</div>
+		      </div>
+         </div>
+
+     </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"  ng-show="!blog.loading">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Blog Editor</h4>
+      </div>
+      <div class="modal-body">
+
+	      <form>
+	        <div class="form-group">
+	          <label for="heading">Heading</label>
+	          <input type="text" class="form-control" id="heading" placeholder="Heading" ng-model="blog.blog.editheading">
+	        </div>
+	        <div class="form-group">
+	          <label for="blogtext">Blog Text</label>
+	          <textarea rows="7" class="form-control" id="blogtext" placeholder="Type here" ng-model="blog.blog.editdata"></textarea> 
+	        </div>
+	      </form>
+      		<div class="loader" ng-show="blog.checking"></div>
+	 	  <div ng-show="blog.successMsg">
+	          <div class="alert alert-success">{{blog.successMsg}}</div>
+	      </div>
+
+	      <div ng-show="blog.errorMsg">
+	          <div class="alert alert-danger">{{blog.errorMsg}}</div>
+	      </div>
+
+	      </div>
+	      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" ng-click="blog.edit()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

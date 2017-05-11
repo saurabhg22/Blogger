@@ -1,0 +1,18 @@
+<h4 class="container" ng-show="main.blogs.length == 0">0 blogs to show</h4>
+<section id="blog" class="padding-top">
+    <div class="container">
+	    <div class="row">
+	         <div class="col-md-6 col-sm-12 blog-padding-right" ng-repeat="blog in main.blogs">
+	            <div class="single-blog two-column">
+	                <div class="post-content blog">
+	                    <h2 class="post-title bold" style="display: inline-block;">
+	                    	<a href="/blogdetails/{{blog.id}}">{{blog.heading | capitalize}}</a>
+
+	                    </h2><span class="label label-default" style="float: right;">{{blog.updated_at | date : "medium"}}</span>
+	                    <p>{{blog.data.substring(0, 150);}} ...</p>
+	                </div>
+	            </div>
+	         </div>
+         </div>
+    </div>
+</section>
