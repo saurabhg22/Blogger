@@ -1,6 +1,6 @@
 Requirements
 ============
-* PHP >= 5.3.7
+* PHP >= 5.6.30
 * Laravel >= 1.3.5
 
 ```
