@@ -33,16 +33,30 @@ php artisan migrate
 
 Screenshots
 
+- Landing page after login
+
 ![Alt text](/screenshots/Etale.png "Demo")
+
+- New Blog Creator
 
 ![Alt text](/screenshots/Etale1.png "Demo")
 
+- Blog Details page
+
 ![Alt text](/screenshots/Etale2.png "Demo")
+
+- Blog Editor
 
 ![Alt text](/screenshots/Etale3.png "Demo")
 
+- Profile to see all your blogs
+
 ![Alt text](/screenshots/Etale4.png "Demo")
 
+- User Registration
+
 ![Alt text](/screenshots/Etale5.png "Demo")
+
+- Login Page
 
 ![Alt text](/screenshots/Etale6.png "Demo")
