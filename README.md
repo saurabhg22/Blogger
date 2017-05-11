@@ -33,5 +33,16 @@ php artisan migrate
 
 Screenshots
 
-============
-![Alt text](/screenshots/Etale.PNG "Demo")
+![Alt text](/screenshots/Etale.png "Demo")
+
+![Alt text](/screenshots/Etale1.png "Demo")
+
+![Alt text](/screenshots/Etale2.png "Demo")
+
+![Alt text](/screenshots/Etale3.png "Demo")
+
+![Alt text](/screenshots/Etale4.png "Demo")
+
+![Alt text](/screenshots/Etale5.png "Demo")
+
+![Alt text](/screenshots/Etale6.png "Demo")
