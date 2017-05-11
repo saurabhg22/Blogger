@@ -37,7 +37,7 @@ angular.module("blogController", [])
     	$http.post("/api/editblog", data).then(function(data){
     		if(data.data.success){
 	        	app.blog.heading = app.blog.editheading;
-	        	app.blog.data = app.blog.editdata;
+                app.blog.data = app.blog.editdata;
     			app.successMsg = "Successfuly updated.";
     		}
     		else{

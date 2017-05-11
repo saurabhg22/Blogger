@@ -47,7 +47,7 @@ angular.module("mainController", ["authServices"])
                 else if(app.permission == 2){
                     app.category = "Admin";
                 }
-                app.ispermit = app.permission > 0;
+                app.ispermit = app.permission == 1;
                 app.isLoggedIn = true;
                 app.loading = false;
             });

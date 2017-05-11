@@ -277,7 +277,7 @@ Route::post('/api/deleteblog', ['middleware' => 'tokendecoder', function (Reques
 Route::post('/api/newblog', ['middleware' => 'tokendecoder', function (Request $req) {
 	header('Content-Type: application/json');
 	//echo json_encode($req->heading);
-	if($req->decodedtoken->data->permission > 0){
+	if($req->decodedtoken->data->permission == 1){
 		if($req->input('heading') != null && $req->input('data') != null){
 			$user = DB::table('users')->where([
 								    ['username', '=', $req->decodedtoken->data->username],
