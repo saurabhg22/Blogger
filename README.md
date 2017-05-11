@@ -1,14 +1,16 @@
+# Blogger
+```
+- Register with any one of the 3 different types of profiles(Reader, Blogger, Admin).
+- Reader can only read blogs.
+- Blogger can edit, create and delete his own blogs and read all blogs.
+- Admin can read, edit and delete any blog.
+```
+
 Requirements
 ============
 * PHP >= 5.6.30
 * Laravel >= 1.3.5
 
-```
-- Register with any of 3 different types of profile(Reader, Blogger, Admin).
-- Reader can only read blogs.
-- Blogger can edit, create and delete his own blogs and read all blogs.
-- Admin can read, edit and delete any blog.
-```
 
 # Quick start
 - Clone this repository on your local machine in your server directory.
