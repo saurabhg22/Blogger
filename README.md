@@ -7,7 +7,7 @@ Requirements
 - Register with any of 3 different types of profile(Reader, Blogger, Admin).
 - Reader can only read blogs.
 - Blogger can edit, create and delete his own blogs and read all blogs.
-- Admin can read, edit, create, delete any blog.
+- Admin can read, edit and delete any blog.
 ```
 
 # Quick start
