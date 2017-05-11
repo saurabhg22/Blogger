@@ -24,8 +24,9 @@ DB_PASSWORD=''                //change it with your password if any
 ```
 - Open command prompt or terminal at your project directory and write commands.
 ```
-php artisan serve
 php artisan migrate
+php artisan serve
+
 ```
 
 - You're good to go. Go to <code>localhost:8000</code> to see it inaction.
